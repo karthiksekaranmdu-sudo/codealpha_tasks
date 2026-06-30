@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple E-Commerce Store</title>
+<link rel="icon" href="ecommerce logo.webp">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+
+header{
+    background:#1e293b;
+    color:#fff;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.cart{
+    background:#10b981;
+    padding:10px 20px;
+    border-radius:30px;
+}
+
+/* Hero */
+
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+.btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:#2563eb;
+    color:white;
+}
+
+/* Products */
+
+.products{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+    text-align:center;
+}
+
+.price{
+    color:#2563eb;
+    font-size:24px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.card button{
+    margin:5px;
+}
+
+/* Login */
+
+.auth-section{
+    padding:70px 8%;
+}
+
+.form-box{
+    max-width:450px;
+    background:white;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.form-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+/* Footer */
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:35px;
+}
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    text-align:center;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">ShopX</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#login">Login</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="cart">
+🛒 Cart: <span id="cartCount">0</span>
+</div>
+
+</header>
+
+<section class="hero">
+<div>
+<h1>Simple E-Commerce Store</h1>
+<p>Buy Premium Products at Best Prices</p>
+<button class="btn">Shop Now</button>
+</div>
+</section>
+
+<section class="products" id="products">
+
+<h2 class="section-title">Products</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500">
+<div class="card-content">
+<h3>Sports Shoes</h3>
+<p class="price">$99</p>
+
+<button class="btn details">Details</button>
+<button class="btn add">Add Cart</button>
+
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500">
+<div class="card-content">
+<h3>Smart Watch</h3>
+<p class="price">$149</p>
+
+<button class="btn details">Details</button>
+<button class="btn add">Add Cart</button>
+
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500">
+<div class="card-content">
+<h3>Headphones</h3>
+<p class="price">$79</p>
+
+<button class="btn details">Details</button>
+<button class="btn add">Add Cart</button>
+
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500">
+<div class="card-content">
+<h3>Smart Phone</h3>
+<p class="price">$699</p>
+
+<button class="btn details">Details</button>
+<button class="btn add">Add Cart</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="auth-section" id="login">
+
+<div class="form-box">
+
+<h2>User Login / Registration</h2>
+
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+
+<button class="btn" style="width:100%;" onclick="login()">
+Login / Register
+</button>
+
+</div>
+
+</section>
+
+<footer id="contact">
+<h2>Order Processing Demo</h2>
+<br>
+<button class="btn" onclick="placeOrder()">
+Place Order
+</button>
+
+<p style="margin-top:20px;">
+© 2026 ShopX | All Rights Reserved
+</p>
+
+</footer>
+
+<script>
+
+let count=0;
+
+document.querySelectorAll(".add").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+count++;
+document.getElementById("cartCount").innerText=count;
+
+alert("Product Added To Cart");
+
+});
+
+});
+
+document.querySelectorAll(".details").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+alert("Product Details:\\nPremium Quality Product\\nFree Shipping\\n1 Year Warranty");
+
+});
+
+});
+
+function login(){
+
+alert("User Registered/Login Successful");
+
+}
+
+function placeOrder(){
+
+if(count===0){
+
+alert("Your cart is empty.");
+
+}
+
+else{
+
+alert("Order Placed Successfully!");
+
+count=0;
+document.getElementById("cartCount").innerText=0;
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
