@@ -72,3 +72,5 @@ This project serves as a beginner-friendly implementation of an e-commerce platf
 <img width="1918" height="1078" alt="Image" src="https://github.com/user-attachments/assets/38142aea-532a-4b5f-8a20-bf3371c1280d" />
 
 ## DEMO
+https://github.com/user-attachments/assets/dcc38faf-62d6-4379-ad22-f6be040520af
+
