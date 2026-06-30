@@ -59,3 +59,6 @@ User Profile Management
 Admin Dashboard for Product Management
 
 This project serves as a beginner-friendly implementation of an e-commerce platform and provides a strong foundation for developing full-stack e-commerce applications.
+
+## SCREENSHOTS
+<img width="1912" height="1078" alt="Image" src="https://github.com/user-attachments/assets/36e534e2-cb33-4341-a317-71a4e0d96083" />
