@@ -62,3 +62,13 @@ This project serves as a beginner-friendly implementation of an e-commerce platf
 
 ## SCREENSHOTS
 <img width="1912" height="1078" alt="Image" src="https://github.com/user-attachments/assets/36e534e2-cb33-4341-a317-71a4e0d96083" />
+
+<img width="1915" height="1072" alt="Image" src="https://github.com/user-attachments/assets/2b649214-ce20-4eee-ace5-05acdd80e8a0" />
+
+<img width="1915" height="1072" alt="Image" src="https://github.com/user-attachments/assets/fce391ab-19ba-49ae-ac5c-3c68d2366007" />
+
+<img width="1918" height="1073" alt="Image" src="https://github.com/user-attachments/assets/b8c29565-adf8-4c69-bd68-12757513de3e" />
+
+<img width="1918" height="1078" alt="Image" src="https://github.com/user-attachments/assets/38142aea-532a-4b5f-8a20-bf3371c1280d" />
+
+## DEMO
